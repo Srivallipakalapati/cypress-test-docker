@@ -1,20 +1,20 @@
 # cypress-test-docker
 
-> Example running Cypress tests against application
+Sample project to run Cypress tests against application in docker (both app and tests)
 
-First [container runs app (oos-ca)](oos-ca/Dockerfile), second container has [Cypress tests](e2e/Dockerfile).
+First container has[container runs app (oos-ca)](oos-ca/Dockerfile) and second container has [Cypress tests](e2e/Dockerfile).
 
-## Documentation
+### Documentation
 
 Please see [Cypress test document](e2e/README.md) on how to run tests locally
 
 
-## Use
+### Use
 
-1. build the containers with `npm run build`
-2. start the web application and run Cypress tests with `npm run up`
+1) Build the containers with `npm run build`
+2) Start the web application and run Cypress tests with `npm run up`
 
-## More info
+### More info
 
 - [Cypress Docker docs](https://on.cypress.io/docker)
 - [Cypress continuous integration docs](https://on.cypress.io/ci)

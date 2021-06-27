@@ -2,11 +2,11 @@
 Contains a suite of cypress tests that run against oos-ca application
 Tests are written using a BDD syntax Given, When, Then 
 
-## prerquisites
+### prerquisites
 Require yarn or node installed
 Using `cypress-cucumber-preprocessor` for BDD
 
-## Running locally
+### Running locally
 `yarn install` to install project dependencies
 
 Everytime Cypress is installed, need to link cypress-cucumber-preprocessor with cypress using:
@@ -20,7 +20,10 @@ Runing tests via Cypress runner:
 Running a single test headlessly:
 `yarn cypress run --spec 'cypress/integration/**/verifyCrewApplicationSearchFunctionality.feature'`
 
-## Feature 
+### Features
+
+1) [Crew Search](/cypress/integration/verifyCrewApplicationSearchFunctionality.feature)
+2) [Crew Manage](/cypress/integration/verifyApplicantManageFunctionality.feature)
 
 
 
