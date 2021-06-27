@@ -4,7 +4,7 @@ Feature: Verify crew application search functionality
     and verify results displayed as per search criteria
     and also verify clear search functionality working as expected
 
-    @Search
+    @CrewSearch
     Scenario Outline: search for applicant using name and city
         Given I navigate to crew applications website
         When I enter applicant name '<name>'
@@ -17,7 +17,7 @@ Feature: Verify crew application search functionality
             | linda   | liverpool | 1      |
             | stewart | worcester | 1      |
 
-    @Search
+    @CrewSearch
     Scenario Outline: search for applicant using city
         Given I navigate to crew applications website
         When I enter applicant city '<city>'
@@ -29,7 +29,7 @@ Feature: Verify crew application search functionality
             | cardiff | 1      |
             | er      | 3      |
 
-    @Search
+    @CrewSearch
     Scenario Outline: search for applicant using name
         Given I navigate to crew applications website
         When I enter applicant name '<name>'
@@ -41,7 +41,7 @@ Feature: Verify crew application search functionality
             | julia | 1      |
             | li    | 2      |
 
-    @Search
+    @CrewSearch
     Scenario Outline: serach for applicant using full name and clear search
         Given I navigate to crew applications website
         When I enter applicant name '<fullname>'

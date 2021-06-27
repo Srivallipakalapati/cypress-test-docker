@@ -1,4 +1,5 @@
 # cypress-test-docker
+
 Contains a suite of cypress tests that run against oos-ca application
 Tests are written using a BDD syntax Given, When, Then 
 
@@ -24,6 +25,3 @@ Running a single test headlessly:
 
 1) [Crew Search](/cypress/integration/verifyCrewApplicationSearchFunctionality.feature)
 2) [Crew Manage](/cypress/integration/verifyApplicantManageFunctionality.feature)
-
-
-

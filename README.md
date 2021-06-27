@@ -2,7 +2,7 @@
 
 Sample project to run Cypress tests against application in docker (both app and tests)
 
-First container has[container runs app (oos-ca)](oos-ca/Dockerfile) and second container has [Cypress tests](e2e/Dockerfile).
+First container has [app](oos-ca/Dockerfile) and second container has [Cypress tests](e2e/Dockerfile).
 
 ### Documentation
 

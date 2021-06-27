@@ -42,27 +42,3 @@ Feature: Verify Applicant manage functionality
         When I move all cards from 'Applied' to next stage
         Then I verify '0' applicants present in 'Applied' column
         And I verify '4' applicants present in 'Interviewing' column
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# 1) user should be able to move applicant from applied to interviewing - 1
-# 2) user should be able to move applicant from interviewing to hired -2
-# 3) user should be able to move applicant from hired to interviewing-3
-# 4) user should be able to move applicant from interviewing to applied  -4
-# 5) user should be able to see only right arrow for applicant in applied column -4
-# 6) user should be able to see only left arrow for applicatnt in hired column -2
-# 7) user should be able to see both left and right arrows for applicatnt in interviewing column - 1
-# 9) user should see empty column when no applicants present in applied column -5
-# 10) user should see empty column when no applicants present in interviewing column
-# 11) user should see empty column when no applicants present in hired column -3
