@@ -1,18 +1,17 @@
 # cypress-test-docker
 
-Contains a suite of cypress tests that run against oos-ca application
+Contains a suite of cypress tests that run against sample application
 Tests are written using a BDD syntax Given, When, Then 
 
 ### prerquisites
 Require yarn or node installed
-Using `cypress-cucumber-preprocessor` for BDD
 
 ### Running locally
 Install project dependencies
 
 `yarn install`
 
-Everytime Cypress is installed, need to link cypress-cucumber-preprocessor with cypress using:
+Using `cypress-cucumber-preprocessor` for BDD. Everytime Cypress is installed, need to link cypress-cucumber-preprocessor with cypress using:
 
 `npm link cypress-cucumber-preprocessor`
 
