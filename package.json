@@ -1,0 +1,8 @@
+{
+  "name": "cypress-test-docker",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "docker-compose build",
+    "up": "docker-compose up --abort-on-container-exit --exit-code-from e2e"
+  }
+}
