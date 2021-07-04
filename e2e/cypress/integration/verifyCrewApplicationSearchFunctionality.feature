@@ -4,9 +4,11 @@ Feature: Verify crew application search functionality
     and verify results displayed as per search criteria
     and also verify clear search functionality working as expected
 
+    Background:
+        Given I navigate to crew applications website
+
     @CrewSearch
     Scenario Outline: search for applicant using name and city
-        Given I navigate to crew applications website
         When I enter applicant name '<name>'
         And I enter applicant city '<city>'
         And I submit search criteria
@@ -19,7 +21,6 @@ Feature: Verify crew application search functionality
 
     @CrewSearch
     Scenario Outline: search for applicant using city
-        Given I navigate to crew applications website
         When I enter applicant city '<city>'
         And I submit search criteria
         Then I verify '<number>' of applicants displayed as expected
@@ -31,7 +32,6 @@ Feature: Verify crew application search functionality
 
     @CrewSearch
     Scenario Outline: search for applicant using name
-        Given I navigate to crew applications website
         When I enter applicant name '<name>'
         And I submit search criteria
         Then I verify '<number>' of applicants displayed as expected
@@ -43,7 +43,6 @@ Feature: Verify crew application search functionality
 
     @CrewSearch
     Scenario Outline: serach for applicant using full name and clear search
-        Given I navigate to crew applications website
         When I enter applicant name '<fullname>'
         And I submit search criteria
         Then I verify no results displayed
